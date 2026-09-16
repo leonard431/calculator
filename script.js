@@ -9,8 +9,10 @@ let divideButton = document.getElementById("divide");
 
 
 function calculate(operator) {
-    let num1 = Number(firstNumber.value);
-    let num2 = Number(secondNumber.value);
+      let num1 = Number(document.getElementById("num1").value);
+
+      let num2 = Number(document.getElementById("num2").value);
+
 
     if (operator === "add") {
         result.textContent = num1 + num2;
@@ -21,7 +23,7 @@ function calculate(operator) {
     }
 
     else if (operator === "multiply") {
-        result.textContent = num1 * num2;
+        result.textContent = num1 * num2; 
     }
 
     else if (operator === "divide") {
